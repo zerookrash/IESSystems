@@ -1,0 +1,36 @@
+.form-container {
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 500px;
+    padding: 16px;
+    margin: 10px auto;
+    background: #f7f7f7;
+}
+
+.form-container input {
+    transition: all 0,30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 3%;
+    color: #555555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+
+.form-container .btn-send {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: #43d1af;
+    border-bottom: 2px solid #30c29e;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.form-container .btn-send:hover {
+    background: #2ebc99;
+}

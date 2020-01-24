@@ -1,0 +1,6 @@
+<div class="form-container">
+    <form [formGroup]="idForm" (ngSubmit)='onSubmit()'>
+        <input type="text" formControlName="id" placeholder="User ID">
+        <button class="btn-send" type="submit">Send</button>
+    </form>
+</div>
