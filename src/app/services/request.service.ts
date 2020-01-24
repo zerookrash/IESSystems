@@ -13,13 +13,10 @@ export class RequestService {
   reqData(id) {
     let body: HttpParams = new HttpParams();
     body = {
-      'usuario_id': id
+      usuario_id: id
     };
-    const header = {
-      'Accept': 'application/json; odata=verbose',
-      'Content-Type': 'application/json'
-    };
-    this.http.post('http://201.131.20.74:8080/workingmons-ws/insumos/consultaAll', body, header)
+    const headers = new Headers({'Content-Type': 'application/json'});
+    this.http.post('http://201.131.20.74:8080/workingmons-ws/insumos/consultaAll', body)
       .subscribe(
         res => console.log(res),
         err => console.error(err)
